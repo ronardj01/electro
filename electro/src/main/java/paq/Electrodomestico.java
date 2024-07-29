@@ -8,10 +8,10 @@ package paq;
  * @author LUISA
  */
 public abstract class Electrodomestico {
-    private float precioBase;
-    private String color;
-    private char consumoEnergetico;
-    private float peso;
+    protected float precioBase;
+    protected String color;
+    protected char consumoEnergetico;
+    protected float peso;
      
     // Constructores
     public Electrodomestico() {
