@@ -77,5 +77,5 @@ public abstract class Electrodomestico {
         return " " + "precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico=" + consumoEnergetico + ", peso=" + peso;
     }
     
-    
+    public abstract float preciofinal();
 }
