@@ -4,6 +4,8 @@
 
 package com.mycompany.electro;
 
+import paq.Lavadora;
+
 /**
  *
  * @author ronar
@@ -11,6 +13,7 @@ package com.mycompany.electro;
 public class Electro {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Lavadora miLavadora = new Lavadora();
+        System.out.println(miLavadora);
     }
 }
