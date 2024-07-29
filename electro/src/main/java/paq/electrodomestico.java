@@ -7,21 +7,21 @@ package paq;
  *
  * @author LUISA
  */
-public abstract class electrodomestico {
+public abstract class Electrodomestico {
     private float precioBase;
     private String color;
     private char consumoEnergetico;
     private float peso;
      
     // Constructores
-    public electrodomestico() {
+    public Electrodomestico() {
         this.precioBase = 100f;
         this.color = "blanco";
         this.consumoEnergetico = 'F';
         this.peso = 5f;
     }
 
-    public electrodomestico(float precioBase, float peso) {
+    public Electrodomestico(float precioBase, float peso) {
         this.precioBase = precioBase;
         this.peso = peso;
         this.color = "blanco";
@@ -29,7 +29,7 @@ public abstract class electrodomestico {
     }
     
 
-    public electrodomestico(float precioBase, String color, char consumoEnergetico, float peso) {
+    public Electrodomestico(float precioBase, String color, char consumoEnergetico, float peso) {
         this.precioBase = precioBase;
         this.color = color;
         this.consumoEnergetico = consumoEnergetico;
