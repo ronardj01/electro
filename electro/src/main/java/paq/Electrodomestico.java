@@ -12,23 +12,27 @@ public abstract class Electrodomestico {
     protected String color;
     protected char consumoEnergetico;
     protected float peso;
-     
+    
+    private final float PRECIOBASE = 100;
+    private final String COLOR = "blanco";   
+    private  final char CONSUMOENERGETICO = 'F';
+    private final float PESO = 5;
+        
     // Constructores
     public Electrodomestico() {
-        this.precioBase = 100f;
-        this.color = "blanco";
-        this.consumoEnergetico = 'F';
-        this.peso = 5f;
+        this.precioBase = this.PRECIOBASE;
+        this.color = this.COLOR;
+        this.consumoEnergetico = this.CONSUMOENERGETICO;
+        this.peso = this.PESO;
     }
 
     public Electrodomestico(float precioBase, float peso) {
         this.precioBase = precioBase;
         this.peso = peso;
-        this.color = "blanco";
-        this.consumoEnergetico = 'F';        
+        this.color = this.COLOR;
+        this.consumoEnergetico = this.CONSUMOENERGETICO;        
     }
     
-
     public Electrodomestico(float precioBase, String color, char consumoEnergetico, float peso) {
         this.precioBase = precioBase;
         this.color = color;
